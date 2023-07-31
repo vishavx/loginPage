@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+  <!-- <link rel="stylesheet" href="../static/style.css"> -->
+</head>
+
+<body>
+  <div id="div1">
+    <div  >
+      <h1>Registration Form</h1>
+    </div>
+    <div id="div3">
+      <form method="post" action="/add_user">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="name" class="form-control" name="uname" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" name="uemail" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" name="upwd" placeholder="Enter password">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <p style="font-size: medium; margin-top:20px;"> Already a member ? <a href="/">sign in</a></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

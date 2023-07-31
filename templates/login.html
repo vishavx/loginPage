@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+  <!-- <link rel="stylesheet" href="../static/style.css"> -->
+</head>
+
+<body>
+  <div id="div1">
+    <div  >
+      <h1>Login Form</h1>
+    </div>
+    <div id="div3">
+      <form method="post" action="/form_validation">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="name" class="form-control" name="name" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" name="pwd" placeholder="Enter password">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <p style="font-size: medium; margin-top:20px;"> Not a member ? <a href="/register">create account</a></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

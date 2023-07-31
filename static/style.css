@@ -1,0 +1,27 @@
+body{
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+h1{
+    /* border:2px solid rgb(0, 0, 0); */
+    margin-top: 150px;
+    height: 300px;
+    font-size: 100px;
+    color: white;
+}
+#div1{
+    display: flex;
+    justify-content: space-evenly;
+}
+#div3{
+    /* border:2px solid rgb(0, 0, 0); */
+    margin: 50px;
+    padding: 20px;
+    /* height: 300px;*/
+    width: 500px; 
+    font-size: x-large;
+    color:white;
+}
